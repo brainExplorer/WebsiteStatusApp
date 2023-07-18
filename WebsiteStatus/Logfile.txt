@@ -1,0 +1,81 @@
+2023-07-18 16:53:24.069 +03:00 [INF] Startingup the service.
+2023-07-18 16:53:24.967 +03:00 [DBG] Hosting starting
+2023-07-18 16:53:25.273 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-18 16:53:25.289 +03:00 [INF] Hosting environment: Development
+2023-07-18 16:53:25.297 +03:00 [INF] Content root path: D:\CSharp Projects\WebsiteStatusApp\WebsiteStatus
+2023-07-18 16:53:25.298 +03:00 [DBG] Hosting started
+2023-07-18 16:53:36.722 +03:00 [ERR] BackgroundService failed
+System.Net.Http.HttpRequestException: Bilinen böyle bir ana bilgisayar yok. (www.bbc.com:443)
+ ---> System.Net.Sockets.SocketException (11001): Bilinen böyle bir ana bilgisayar yok.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at WebsiteStatus.Worker.ExecuteAsync(CancellationToken stoppingToken) in D:\CSharp Projects\WebsiteStatusApp\WebsiteStatus\Worker.cs:line 27
+   at Microsoft.Extensions.Hosting.Internal.Host.TryExecuteBackgroundServiceAsync(BackgroundService backgroundService)
+2023-07-18 16:53:36.759 +03:00 [FTL] The HostOptions.BackgroundServiceExceptionBehavior is configured to StopHost. A BackgroundService has thrown an unhandled exception, and the IHost instance is stopping. To avoid this behavior, configure this to Ignore; however the BackgroundService will not be restarted.
+System.Net.Http.HttpRequestException: Bilinen böyle bir ana bilgisayar yok. (www.bbc.com:443)
+ ---> System.Net.Sockets.SocketException (11001): Bilinen böyle bir ana bilgisayar yok.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at WebsiteStatus.Worker.ExecuteAsync(CancellationToken stoppingToken) in D:\CSharp Projects\WebsiteStatusApp\WebsiteStatus\Worker.cs:line 27
+   at Microsoft.Extensions.Hosting.Internal.Host.TryExecuteBackgroundServiceAsync(BackgroundService backgroundService)
+2023-07-18 16:53:36.763 +03:00 [INF] Application is shutting down...
+2023-07-18 16:53:36.770 +03:00 [DBG] Hosting stopping
+2023-07-18 16:53:36.776 +03:00 [DBG] Hosting stopped
+2023-07-18 17:00:08.689 +03:00 [INF] Startingup the service.
+2023-07-18 17:00:10.259 +03:00 [DBG] Hosting starting
+2023-07-18 17:00:10.539 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-18 17:00:10.555 +03:00 [INF] Hosting environment: Development
+2023-07-18 17:00:10.557 +03:00 [INF] Content root path: D:\CSharp Projects\WebsiteStatusApp\WebsiteStatus
+2023-07-18 17:00:10.557 +03:00 [DBG] Hosting started
+2023-07-18 17:00:11.033 +03:00 [INF] Website is up with return its status code: "OK" 
+2023-07-18 17:00:16.239 +03:00 [INF] Website is up with return its status code: "OK" 
+2023-07-18 17:00:21.320 +03:00 [INF] Website is up with return its status code: "OK" 
+2023-07-18 17:00:26.409 +03:00 [INF] Website is up with return its status code: "OK" 
+2023-07-18 17:00:31.497 +03:00 [INF] Website is up with return its status code: "OK" 
+2023-07-18 17:00:36.591 +03:00 [INF] Website is up with return its status code: "OK" 
+2023-07-18 17:00:41.673 +03:00 [INF] Website is up with return its status code: "OK" 
+2023-07-18 17:00:46.763 +03:00 [INF] Website is up with return its status code: "OK" 
+2023-07-18 17:00:51.851 +03:00 [INF] Website is up with return its status code: "OK" 
+2023-07-18 17:00:56.933 +03:00 [INF] Website is up with return its status code: "OK" 
+2023-07-18 17:00:57.551 +03:00 [INF] Application is shutting down...
+2023-07-18 17:00:57.560 +03:00 [DBG] Hosting stopping
+2023-07-18 17:00:57.607 +03:00 [DBG] Hosting stopped
+2023-07-18 17:16:07.284 +03:00 [INF] Startingup the service.
+2023-07-18 17:16:08.310 +03:00 [DBG] Hosting starting
+2023-07-18 17:16:08.588 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-18 17:16:08.615 +03:00 [INF] Hosting environment: Development
+2023-07-18 17:16:08.617 +03:00 [INF] Content root path: D:\CSharp Projects\WebsiteStatusApp\WebsiteStatus
+2023-07-18 17:16:08.618 +03:00 [DBG] Hosting started
+2023-07-18 17:16:09.065 +03:00 [INF] Website is up with return its status code: "OK" 
+2023-07-18 17:16:14.245 +03:00 [INF] Website is up with return its status code: "OK" 
+2023-07-18 17:16:19.360 +03:00 [INF] Website is up with return its status code: "OK" 
+2023-07-18 17:16:24.453 +03:00 [INF] Website is up with return its status code: "OK" 
+2023-07-18 17:16:29.553 +03:00 [INF] Website is up with return its status code: "OK" 
+2023-07-18 17:16:34.640 +03:00 [INF] Website is up with return its status code: "OK" 
+2023-07-18 17:16:39.738 +03:00 [INF] Website is up with return its status code: "OK" 
